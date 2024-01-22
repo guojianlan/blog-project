@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "pnpm run --parallel dev",
+    "dev:cms": "pnpm run --filter=cms dev",
+    "dev:!cms": "pnpm run --filter=!cms dev"
   },
   "keywords": [],
   "author": "",
